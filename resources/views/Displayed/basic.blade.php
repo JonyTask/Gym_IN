@@ -10,20 +10,21 @@
             <div id="GymSearch">
               <span onclick="GoOut_search()">閉じる</span>
               <div id="searchForm">
-                <form action="base/search" method="get">
+                <form method="post" action="base/search">
                   @csrf
                 <div id="prefectureArea">
                   <label>都道府県</label>
-                  <input type="text" name="prefecture">
+                  <input type="text" name="prefecture" id="prefectureText">
                 </div>
                 <div id="cityArea">
                   <label>市区町村</label>
-                  <input type="text" name="city">
+                  <input type="text" name="city" id="cityText">
                 </div>
 
-                <input type="submit" value="検索" name="search" class="submit_">
+                <input type="submit" value="検索" name="search" class="submit_" id="submit_search">
                 </form>
               </div>
+              <p id="errorArea"></p>
             </div>
 
             <div class="section-circle" onclick="ComeIn_pro()">

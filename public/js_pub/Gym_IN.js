@@ -134,3 +134,17 @@ function hamburgerClose(){
         $('.side-bar').css({top:"-100%"});
     }
 }
+
+function validation(){
+    var prefectureText = document.getElementById("prefectureText").value;
+    var cityText = document.getElementById("cityText").value;
+
+    if(prefectureText == "" | cityText == ""){
+        var errorArea = document.getElementById("errorArea");
+        errorArea.textContent = "入力してください";
+        $("#submit_search").css({'display':'none'});
+    }else{
+        errorArea.textContent = "";
+        $("#submit_search").css({'display':'block'});
+    }
+}

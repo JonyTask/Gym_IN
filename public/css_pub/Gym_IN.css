@@ -201,9 +201,10 @@ li{
 #searchForm,
 #UserInfo{
     width:70%;
-    height:70%;
-    margin:100px auto;
-    padding-top:150px;
+    height:75%;
+    margin:0 auto;
+    margin-top:80px;
+    padding-top:20px;
     border-radius:10px;
     background:linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%);
     color:#111117;

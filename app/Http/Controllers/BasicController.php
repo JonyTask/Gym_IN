@@ -10,8 +10,6 @@ use App\Models\gym;
 use App\Models\message;
 use App\Models\User;
 use App\Models\fake;
-use Illuminate\Contracts\Encryption\DecryptException;
-use Illuminate\Support\Facades\Crypt;
 
 class BasicController extends Controller
 {
@@ -89,8 +87,7 @@ class BasicController extends Controller
 
           DB::update('update fakes set age=:age, gender=:gender, protein=:protein, mustle=:mustle, PR=:PR where name=:name',$parameter);
           return redirect('base');
-        }elseif($request->has('search')){
-          return redirect('base/search');
+          
         }elseif($request->has('add')){
           if($user->Chat_Gym != null && $request->message != null){
             $message = new message();
