@@ -47,6 +47,7 @@ class Kernel extends HttpKernel
         'hello' => [
             \App\Http\Middleware\GymMiddleware::class,
         ],
+        //ミドルウェアグループはRouteServiceProviderによってルートファイル内のルートに自動的に適用される
     ];
 
     /**
