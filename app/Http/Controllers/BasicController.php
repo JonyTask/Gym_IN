@@ -15,7 +15,6 @@ class BasicController extends Controller
 {
     public function index(Request $request){
         $user = Auth::user();
-        
         if($request->Chat_Gym != null){
         $user->Chat_Gym = $request->Chat_Gym;
         $user->save();

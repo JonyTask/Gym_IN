@@ -71,4 +71,5 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'hello' => \App\Http\Middleware\GymMiddleware::class
     ];
+    //ミドルウェアグループは、アライアスによって、キー値と結び付けられ、キー値をコントローラなどで代用する。
 }
