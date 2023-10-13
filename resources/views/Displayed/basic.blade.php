@@ -10,7 +10,7 @@
             <div id="GymSearch">
               <span onclick="GoOut_search()">閉じる</span>
               <div id="searchForm">
-                <form method="post" action="base/search">
+                <form method="get" action="base/search">
                   @csrf
                 <div id="prefectureArea">
                   <label>都道府県</label>

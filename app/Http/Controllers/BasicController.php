@@ -99,6 +99,8 @@ class BasicController extends Controller
           }
         }elseif($request->has('UserProSearch')){
           return redirect('base/profile');
+        }elseif($request->has('search')){
+          return redirect('base/search');
         }
     }
 
